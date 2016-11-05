@@ -6,7 +6,9 @@ public class DevathonPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // put your enable code here
+        getLogger().info("Enabled");
+        this.getCommand("calculator").setExecutor(new CommandCalculator(this));
+        this.getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
     }
 
     @Override
