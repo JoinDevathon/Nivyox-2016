@@ -141,6 +141,7 @@ public class Banners {
         bannerMeta.addPattern(new Pattern(DyeColor.WHITE, PatternType.STRIPE_TOP));
         bannerMeta.addPattern(new Pattern(foreGroundColor, PatternType.STRIPE_BOTTOM));
         bannerMeta.addPattern(new Pattern(foreGroundColor, PatternType.STRIPE_LEFT));
+        bannerMeta.addPattern(new Pattern(foreGroundColor, PatternType.STRIPE_MIDDLE));
         bannerMeta.setDisplayName(ChatColor.RESET.toString() + ChatColor.WHITE + 6);
         banner.setItemMeta(bannerMeta);
         return banner;
